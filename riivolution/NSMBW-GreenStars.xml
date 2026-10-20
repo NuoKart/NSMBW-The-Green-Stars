@@ -1,0 +1,27 @@
+<wiidisc version="1" shiftfiles="true">
+    <id game="SMN" />
+    <options>
+        <section name="Testing">
+            <option name="Mod">
+                <choice name="Enabled">
+                    <patch id="nsmbfolder" />
+                </choice>
+            </option>
+        </section>
+    </options>
+
+    <patch id="nsmbfolder">
+        <folder external="/NSMBW-GreenStars" recursive="false" />
+        <folder external="/NSMBW-GreenStars" disc="/" />
+
+        <!-- Stage -->
+        <folder external="/NSMBW-GreenStars/Stage/" disc="/Stage/" create="true" />
+        <folder external="/NSMBW-GreenStars/Stage/Texture/" disc="/Stage/Texture/" create="true" />
+
+        <!-- Object -->
+        <folder external="/NSMBW-GreenStars/Object/" disc="/Object/" create="true" />
+
+        <!-- Sound -->
+        <folder external="/NSMBW-GreenStars/Sound/" disc="/Sound/" create="true" />
+    </patch>
+</wiidisc>
